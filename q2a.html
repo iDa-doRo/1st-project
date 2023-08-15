@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>adr287 EMA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name= "description" content="OU Walking Club Admin Webiste - Manage and support the club day-to-day administrative tasks." />
+    <link rel="stylesheet" href="q2a.css"/>
+  </head>
+	<body>
+	<!-- Grid -->
+		<div class="container"  tabindex="-1">
+			<!-- Header -->
+  			<header class="heads" ></header>
+    			<div class="ph">
+    				<a href="dummy.html" title="Home Page">
+   					<img src="images/logo.png" title="Company Logo - Home Link" 
+					alt="Direct access to Home Page"></a></div>
+    			<div class="nm">
+      			<div class="av"><img src="images/avatar.png" title="Admin Avatar" alt="Admin Avatar">
+      			</div>
+      			<div class="anm"><h1 title="Admin Identification">Admin ID</h1></div>
+  				</div>
+  				<div class="lg">
+  					<div class="pr"><a href="dummy.html" title="Admin Profile">Admin Profile</a>
+  					</div>
+    				<div class="log">
+    				<a href="dummy.html" title="Log Out">Log Out</a></div>
+  				</div>
+
+			<!-- Navigation -->
+  			<nav class="navs">
+  	 			<ul class="navi">
+ 				 <li class="dropdown">
+    				<a href="javascript:void(0)" class="dropbtn" 
+    				title="Members Section">Members</a>
+    				<div class="dropdown-content">
+      					<a href="dummy.html" title="Edit Member Details">Edit Member</a>
+      					<a href="dummy.html" title="Approve Member">Approve Member</a>
+      					<a href="dummy.html" title="Email Communication">Communication</a>
+    				</div>
+  				</li>
+  				<li class="dropdown">
+    				<a href="javascript:void(0)" class="dropbtn" title="Walks Section">Walks</a>
+    				<div class="dropdown-content">
+      					<a href="dummy.html" title="Add New Walk">Add Walk</a>
+      					<a href="dummy.html" title="Edit Walk Details">Edit Walk</a>
+      					<a href="dummy.html" title="Approve Walk">Approve Walk</a>
+    				</div>
+  				</li>
+  				 <li class="dropdown">
+    				<a href="dummy.html" class="dropbtn" title="Social Events Section">Social Events</a>
+  				</li>
+  				 <li class="dropdown">
+    				<a href="dummy.html" class="dropbtn" title="News Section">News</a>
+  				</li>
+			</ul>
+  			</nav>
+
+  			<!-- Form -->
+  			<form class="forms" 
+  			action="https://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
+				<fieldset>
+        			<legend>Create New Walk Event</legend>
+        			<div class="form-group">
+          				<label for="name">Walk Name:</label>
+          				<input id="name" name="walk_name" type="text" required/>
+        			</div>
+        			<!-- Form elements displayed inline -->
+        			<div class="form-group form-inline-dates">
+         				 <label for="dates">Walk Date: </label> 
+          				<input type="date" id="dates" name="walk_date" required/>
+        			</div>
+        			<div class="form-group form-inline-times">
+          				<label for="stime">Start Time: </label>
+          				<input type="time" id="stime" name="start_time" 
+          				min="07:00" max="22:00" required/>
+        			</div>
+        			<div class="form-group form-inline-times">
+          				<label for="etime">End Time: </label>
+          				<input type="time" id="etime" name="end_time" 
+          				min="07:00" max="22:00" required/>
+        			</div>
+          			<div class="form-group">
+         				 <label for="meet">Meeting Point:</label>
+          				<input id="meet" name="meeting" type="text" required/>
+        			</div>
+        			<div class="form-group form-inline-leader">
+          				<label for="lead">Walk Leader:</label>
+          				<input id="lead" name="leader" type="text" required/>
+       				</div>
+       				<div class="form-group form-inline-km">
+          				<label for="km">Walk Distance:</label>
+          				<input id="km" name="distance" type="number" min="1" max="50" required/>
+       				</div>
+       				<!-- Form textarea element -->
+					<div class="form-group">
+          				<label for="comm">Walk Comments:</label>
+          				<textarea id="comm" name="Walk comments" 
+          				rows="6" cols="30"></textarea>
+          			</div>
+          			<!-- Form buttons -->	
+          			<input class="form-b" type="submit" value="Submit">
+          			<input class="form-b" type="reset" value="Cancel">   				
+      			</fieldset>
+  			</form>	
+			<!-- Footer -->
+  			<footer class="foots">&copy; 2022 Aida Donis - OUCU adr287</footer>
+
+  		</div>	
+	</body>
+</html>
